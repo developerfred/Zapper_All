@@ -1,0 +1,16 @@
+{
+  "name": "static-subgraph",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ stevepro-lab/zapper-all",
+    "create-local": "graph create --node http://localhost:8020/ stevepro-lab/zapper-all",
+    "remove-local": "graph remove --node http://localhost:8020/ stevepro-lab/zapper-all",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 stevepro-lab/zapper-all"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.19.0",
+    "@graphprotocol/graph-ts": "0.18.1"
+  }
+}
